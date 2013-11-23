@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uniform circle formation by autonomous robots</title>
+
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div id="left_container" class="containers">
+		<div class="containers" id="parameters">
+			<strong>Parameters:-</strong>
+			Robots: <input id="robo_num_para" type="number" min="3" max="10" value="5">
+			Max-Iterations: <input id="total_iters" type="number" min="1" max="10000000" value="1000">
+			Delay after iteration:
+			<select id="iter_delay">
+				<option value="0" selected>0.5 second</option>
+				<option value="1">1 second</option>
+			</select>
+			<br/>
+			Simulation Type:
+			<select id="simul_type">
+				<option value="0" selected>1. One faulty robot</option>
+				<option value="1">2. Only anti-clockwise movement</option>
+			</select>
+			<button id="simulation_button">Start Simulation</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;<span id="log"></span>
+		</div>
+
+		<div class="containers" id="simulation_status">
+			Simulation <strong><span id="simulation_run_status">Stopped</span></strong>
+			:
+			<strong>Iteration <span id="iteration_number">-1</span></strong>
+		</div>
+
+		<div class="containers" id="simulation">
+			<canvas id="simulation_canvas" width="890" height="550"></canvas>
+		</div>
+	</div>
+
+	<div id="right_container" class="containers">
+		<div class="containers" id="robots_status">
+			<h5>Number of robots: <span id="robo_num"></span></h5>
+			<h4>Robots Status (robot: (x, y, theta)):-</h4>
+			<ul class="status">
+			</ul>
+		</div>
+
+		<div class="containers" id="activated_robots">
+			<h4>Activated Robots (robot: (target position)):-</h4>
+			<ul class="status">
+			</ul>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	<!-- Scripts from here -->
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

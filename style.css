@@ -1,0 +1,51 @@
+body {
+	overflow: hidden;
+	min-height: 656px;
+	min-width: 1366px;
+	font-family: sans-serif;
+}
+
+.containers {
+	border-bottom: 1px solid black;
+}
+
+#left_container {
+	float: left;
+	width: 900px;
+	height: 656px;
+	border-right: 1px solid black;
+}
+#right_container {
+	float: left;
+	width: 464px;
+	height: 656px;
+}
+
+/* Containers for status */
+#parameters {
+	width: 100%;
+	height: 65px;
+}
+#simulation_status {
+	width: 100%;
+	height: 30px;
+	text-align: center;
+}
+
+#simulation {
+	width: 100%;
+	height: 556px;
+	margin: 1px;
+}
+#robots_status {
+	height: 500px;
+}
+#activated_robots {
+	height: 153px;
+}
+
+#simulation_button {
+	margin: 5px 0px;
+	width: 200px;
+	text-align: center;
+}
