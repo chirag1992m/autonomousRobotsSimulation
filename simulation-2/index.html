@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Minimum perimeter circle formation (Only convergence)</title>
+
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <style type="text/css">
+		#parameters {
+			width: 100%;
+			height: 50px;
+
+			border-bottom: 1px solid black;
+		}
+
+		canvas {
+			border: 1px solid red;
+			margin: 0 auto;
+		}
+    </style>
+</head>
+
+<body>
+
+<div id="parameters">
+	<input type="number" min="10" value="15" max="30" name="num_robots" id="num_robots" />
+	<button id="start_sim">Start Simulation</button>
+</div>
+
+<div>
+	<canvas id="simulation_canvas" height="600" width="800"></canvas>
+</div>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
